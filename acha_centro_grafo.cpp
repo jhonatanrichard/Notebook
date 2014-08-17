@@ -1,13 +1,14 @@
 /* 
 
 Autor: Jhonatan Ríchard Raphael
-Data: 05/07/2012
+Data: 15/07/2012
 Descrição: Encontra o vértice centro da árvore (esse conjunto de vértices centro pode ter tamanho 1 ou 2). 
 
 Obs.: Um vértice centro v possui a excentrecidade mínima na árvore, ou seja, sua localização na árvore faz com que a distancia dos outros vértices para v seja mínima.
 
 Solução: remove todos os nós folhas do grafo utilizando DFS até que haja 1 ou 2 vértices restantes.
 Complexidade: ? ... Ω(V+E) e O(V²+E)
+
 
 */ 
 
