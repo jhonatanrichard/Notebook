@@ -6,9 +6,10 @@ Descrição: Encontra o vértice centro da árvore (esse conjunto de vértices c
 
 Obs.: Um vértice centro v possui a excentrecidade mínima na árvore, ou seja, sua localização na árvore faz com que a distancia dos outros vértices para v seja mínima.
 
-Solução: remove todos os nós folhas do grafo utilizando DFS até que haja 1 ou 2 vértices restantes.
-Complexidade: ? ... Ω(V+E) e O(V²+E)
 
+Solução: remove todos os nós folhas do grafo utilizando DFS até que haja 1 ou 2 vértices restantes.
+Início indexação vetor: 1
+Complexidade: ? ... Ω(V+E) e O(V²+E)
 
 */ 
 
@@ -61,7 +62,7 @@ void dfs(int s,int nivel,int &restante)
 		centro[s] = 1;		// exclui o vértice s do conjunto de vértices centro
 }
 
-// Apaga as folhas da árvore até p <= 2
+// Retorna o identificador de um vértice folha
 int acha_centro()
 {
 	int i;
