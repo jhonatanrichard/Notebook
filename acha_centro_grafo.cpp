@@ -18,6 +18,7 @@ Complexidade: ? ... Ω(V+E) e O(V²+E)
 #include <string.h>
 
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -31,7 +32,8 @@ int n;		// número de vértices
 
 void dfs(int s,int nivel,int &restante)
 {
-	int i,v;
+	unsigned int i;
+	int v;
 	
 	bool folha = true;	// admite-se que esse vértice é uma folha
 	int nfilhos = 0;	// numero de vertices adjacentes de um nó
@@ -95,28 +97,4 @@ void reset()
 	
 	for(i=1;i<=n;i++)
 		G[i].clear();
-}
-
-int main()
-{
-	int i;
-	int u,v;
-	int caso = 0;
-
-	while(  scanf("%d",&n) && n )
-	{
-		reset();
-		
-		for(i=1;i<=n-1;i++)
-		{
-			scanf("%d %d",&u,&v);
-
-			// grafo bidirecional
-			G[u].push_back(v);
-			G[v].push_back(u);
-		}
-
-		printf("Teste %d\n%d\n\n",++caso,acha_centro() );
-	}
-	return 0;
 }
