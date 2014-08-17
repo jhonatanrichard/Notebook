@@ -1,10 +1,20 @@
 /* 
+
+Autor: Jhonatan Ríchard Raphael
+Data: 10/07/2012
+
+Algoritmo: BFS (breadth-first-search)
+Descrição: Visita todos os vértices de um grafo em largura. Imprime o caminho da busca a partir do vértice 's'.
+Complexidade: O(V+E)
+
+Estrutura de Dados: lista de adjacências
+Início Indexação vetor: 1
+Observação: supõe-se grafo conexo.
+
+
+
 - um vértice é uma articulação se sua remoção torna o grafo resultante desconexo 
 - um grafo é biconexo se ele não possui articulações
-
-*/
-
-/*
 
 Regras de articulação:
 
