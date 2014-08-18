@@ -1,7 +1,7 @@
 /* 
 
 Autor: Jhonatan Ríchard Raphael
-Data: 11/07/2012
+Data: 11/09/2012
 
 Algoritmo: Articulações
 Descrição: Verifica quais vértices de um grafo são articulações
